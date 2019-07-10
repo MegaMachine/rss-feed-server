@@ -24,36 +24,19 @@ app.post('/login', (req, res) => {
     res.send(false);
   }
 });
+
+//Feeds
 app.get('/feeds', (req, res) => {
   let jsonFeeds = fs.readFileSync('./static/feeds.json');
   let feeds = JSON.parse(jsonFeeds);
   res.send(feeds);
 });
-app.delete('/feeds', (req, res) => {
-  let deleteFeed = req.body;
-  let jsonFeeds = fs.readFileSync('./static/feeds.json');
-  let feeds = JSON.parse(jsonFeeds);
-  console.log(deleteFeed);
-  // for(let key in feeds){
-  //   console.log(feeds[key].name , deleteFeed.name);
-  //   if(feeds[key].user === deleteFeed.user && feeds[key].title === deleteFeed.title){
-  //     // feeds.splice(key,1);
-  //     console.log(key);
-  //   }
-  // }
-  // res.send(feeds);
-  // let afterDelete = JSON.stringify(feeds);
-  // fs.writeFileSync('./static/feeds.json', afterDelete);
-});
 
 app.put('/feeds', (req, res) => {
-  let newFeed = req.body;
-  let jsonFeeds = fs.readFileSync('./static/feeds.json');
-  let feeds = JSON.parse(jsonFeeds);
-  feeds.push(newFeed);
-  res.send(feeds)
-  let afterAdd = JSON.stringify(feeds);
-  fs.writeFileSync('./static/feeds.json', afterAdd);
+  console.log(req.body)
+  let newFeeds = req.body;
+  let feeds = JSON.stringify(newFeeds);
+  fs.writeFileSync('./static/feeds.json', feeds);
 });
 
 //Server listen

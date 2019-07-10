@@ -1,15 +1,1 @@
-[
-  {
-    "user" : "test@test.com",
-    "title" : "NASA1",
-    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
-  },{
-    "user" : "test@test.com",
-    "title" : "NASA2",
-    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
-  },{
-    "user" : "test@test.com",
-    "title" : "NASA3",
-    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
-  }
-]
+[{"user":"test@test.com","title":"NASA1","url":"https://www.nasa.gov/rss/dyn/breaking_news.rss"},{"user":"test@test.com","title":"NASA2","url":"https://www.nasa.gov/rss/dyn/breaking_news.rss"},{"user":"test@test.com","title":"NASA3","url":"https://www.nasa.gov/rss/dyn/breaking_news.rss"},{"user":"test@test.com","title":"fsdfsdf","url":"sdfsdfs"}]
