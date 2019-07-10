@@ -1,0 +1,15 @@
+[
+  {
+    "user" : "test@test.com",
+    "title" : "NASA",
+    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+  },{
+    "user" : "test@test.com",
+    "title" : "NASA",
+    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+  },{
+    "user" : "test@test.com",
+    "title" : "NASA",
+    "url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+  }
+]
